@@ -44,9 +44,13 @@ function merge(left: number[], right: number[]): number[] {
     // Step 2: Add remaining elements safely
     if (i < left.length) {
         result.push(...left.slice(i));
+        console.log('i < left.length', result);
+
     }
     if (j < right.length) {
         result.push(...right.slice(j));
+        console.log('i < right.length', result);
+
     }
 
     return result;
