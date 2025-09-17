@@ -45,8 +45,11 @@ function letterCombinations(digits: string): string[] {
 
         // Step 4: Iterate over possible letters for current digit
         const letters = phoneMap[digits[index]!]!;
+        
         for (const letter of letters) {
-            backtrack(index + 1, path + letter);
+            // backtrack(index + 1, path + letter);
+            console.log('letters',`backtrack(${index + 1},${path +letter})`);
+            
         }
     }
 
