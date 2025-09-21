@@ -114,7 +114,6 @@ console.log(listToArray(mergeKLists([
 
 console.log(listToArray(mergeKLists([])));       // []
 console.log(listToArray(mergeKLists([null])));   // []
-
 /**
  * Time Complexity:
  * - O(N log k), where N is the total number of nodes
