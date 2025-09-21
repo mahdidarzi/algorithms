@@ -68,7 +68,7 @@ function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
      * Step 2: Merge lists using divide and conquer
      */
     function mergeRange(lists: Array<ListNode | null>, left: number, right: number): ListNode | null {
-        if (left === right) return lists[left];
+        if (left === right) return lists[left]!;
         if (left > right) return null;
 
         const mid = Math.floor((left + right) / 2);
